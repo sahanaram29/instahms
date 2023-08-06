@@ -21,7 +21,18 @@ Some sample queries of this project are
 ![image](https://github.com/sai-hari98/instahms/assets/30078806/c20cc636-9155-48aa-bfd0-e196da609447)
 
 ## Stored Functions
+1. Function to find the patient id using DOB and mobile number
+![image](https://github.com/sai-hari98/instahms/assets/30078806/a7d6db70-0090-486e-9aa4-4086d3a39f44)
+
+2. Function to get the appointment details using patient id
+![image](https://github.com/sai-hari98/instahms/assets/30078806/fe0ad30a-d7b2-4ea9-845c-d7fe7b4f901d)
 
 ## Stored Procedures
+1. Stored Procedure to reschedule an appointment
+![image](https://github.com/sai-hari98/instahms/assets/30078806/0d994ab7-963a-486b-8e67-314dd3391948)
+
+2. Stored Procedure to update an inventory request
+![image](https://github.com/sai-hari98/instahms/assets/30078806/4cdec712-f837-456c-b627-41910f286d72)
 
 ## Triggers
+1. 
