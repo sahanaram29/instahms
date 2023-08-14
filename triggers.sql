@@ -21,9 +21,9 @@ Delimiter ;
 ALTER TABLE user_t MODIFY COLUMN userPassword VARCHAR(100);
 #testing trigger
 INSERT INTO user_t (username, userPassword, Firstname, Lastname, email, phonenumber, UserRole)
-VALUES ('sahanar', 'r', 'Sahana',
- 'Ram', 'sr29@gmail.com', '000-000-022', 'Patient');
-select * from user_t where username='sahanar';
+VALUES ('sai_hari98', 'sai_hari98', 'Sairam',
+ 'Harikrishnan', 'sai_hari98@gmail.com', '000-000-022', 'Patient');
+select * from user_t where username='sai_hari98';
 
 #2. Trigger to automatically update a patient's EmergencyContactInformation when their EmergencyContactInformation is changed:
 DELIMITER //
@@ -55,7 +55,11 @@ CREATE TRIGGER store_patient_details
 BEFORE UPDATE ON Patient_T
 FOR EACH ROW
 BEGIN
-    INSERT INTO Patient_Details_Backup (PatientID, UserID, DateofBirth, Gender, Address, EmergencyContactInformation)
+    INSERT INTO Patient_Details_Backup_T (PatientID, UserID, DateofBirth, Gender, Address, EmergencyContactInformation)
     VALUES (OLD.PatientID, OLD.UserID, OLD.DateofBirth, OLD.Gender, OLD.Address, OLD.EmergencyContactInformation);
 END; //
 DELIMITER ;
+
+
+UPDATE Patient_T SET DateOfBirth = '1997-05-16' WHERE UserID = '503191';
+SELECT * FROM Patient_Details_Backup_T;
