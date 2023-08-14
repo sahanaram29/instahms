@@ -349,8 +349,8 @@ CREATE TABLE User_T (
 --
 
 DROP TABLE IF EXISTS Patient_Details_Backup_T;
-CREATE TABLE Patient_Details_Backup(
-TxnID int not null,
+CREATE TABLE Patient_Details_Backup_T(
+TxnID int not null auto_increment,
 PatientID int not null, 
 UserID int not null, 
 DateofBirth DATE not null,
