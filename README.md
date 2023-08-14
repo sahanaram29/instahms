@@ -35,4 +35,11 @@ Some sample queries of this project are
 ![image](https://github.com/sai-hari98/instahms/assets/30078806/4cdec712-f837-456c-b627-41910f286d72)
 
 ## Triggers
-1. 
+1. Trigger to assign 'Patient' as default 'UserRole' if not specified while a new user
+registers into the system. This trigger also encrypts the password using MD5.
+![image](https://github.com/sai-hari98/instahms/assets/30078806/bb49e44d-85d1-4b23-aecf-3c626c16a5fa)
+
+2. Trigger to log the patient details in the backup transaction table before updating the patient info
+![image](https://github.com/sai-hari98/instahms/assets/30078806/e0e077d9-5fc2-44c2-b4b9-8d6d0ec18d24)
+
+
